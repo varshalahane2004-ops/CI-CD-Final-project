@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/varshalahane2004-ops/CI-CD-Final-project.git'
-            }
-        }
 
         stage('Build Docker Image') {
             steps {
